@@ -2,7 +2,7 @@
 import { Ref } from "react";
 
 interface IProps {
-  name: string,
+  name?: string,
   onChange?: Function,
   placeholder?: string,
   label?: string,
@@ -10,7 +10,7 @@ interface IProps {
   id?: string,
   type: string,
   error?: string,
-  value?: number ,
+  value?: number | string ,
   ref?: Ref<HTMLInputElement> | undefined
 }
 
